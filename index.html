@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cá Nhân</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Họ và Tên</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Thông Tin</a></li>
+                    <li><a href="#portfolio">Dự Án</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Thông Tin Cá Nhân</h2>
+            <p>Thêm một đoạn giới thiệu ngắn về bản thân ở đây.</p>
+            <img src="profile.jpg" alt="Ảnh Cá Nhân">
+        </div>
+    </section>
+    
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Dự Án</h2>
+            <div class="project-slider">
+                <div class="project-slide active">
+                    <div class="video-wrapper">
+                        <video class="project-video" controls autoplay loop>
+                            <source src="project1.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ video.
+                        </video>
+                    </div>
+                </div>
+                <!-- Các video khác -->
+                <div class="project-slide">
+                    <div class="video-wrapper">
+                        <video class="project-video" controls autoplay loop>
+                            <source src="project2.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ video.
+                        </video>
+                    </div>
+                </div>
+                <!-- Thêm các video khác tương tự -->
+            </div>
+            <!-- Các thumbnail và hình ảnh dự án -->
+            <div class="video-thumbnails">
+                <div class="video-thumbnail active" data-index="1"></div>
+                <!-- Các thumbnail khác -->
+            </div>
+            <div class="project-images">
+                <div class="project-image"><img src="project1.jpg" alt="Dự Án 1"></div>
+                <!-- Thêm các ảnh dự án khác -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Liên Hệ</h2>
+            <form action="#" class="contact-form">
+                <div class="form-group">
+                    <label for="fullname">Họ và Tên</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nội dung tin nhắn</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Gửi Tin Nhắn</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Họ và Tên. Bản quyền thuộc về tôi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
